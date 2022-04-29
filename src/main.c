@@ -8,9 +8,9 @@ int main(int argc, char **argv)
 	FILE *output = fopen(argv[1],"w+");
 	
 	if(!input || !output) return 1;
-
+	
 	ctmlCompile(input,output);
-
+	
 	fclose(input);
 	fclose(output);
 

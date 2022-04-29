@@ -1,4 +1,5 @@
 #include "EleStack.h"
+#include "PreProcessor.h"
 
 void ctmlCompile(FILE *input, FILE *output)
 {
@@ -23,6 +24,8 @@ void ctmlCompile(FILE *input, FILE *output)
 	//syntax checking
 	if(opcount == clcount)
 	{
+		char *srcText = noSpace(input);
+		printf("%s\n",srcText);
 		elStack Stack;	
 
 		Stack.len = opcount;
