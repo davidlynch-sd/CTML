@@ -1,10 +1,23 @@
+/*		CTML 
+ *
+ *		DAVID LYNCH
+ *
+ *		29/4/22
+ *
+ */
 
-typedef struct element
+
+//Stack will be char *[length] 
+
+
+
+
+void elPush(char *input)
 {
-	int eleLen;
-	char eleName[];
+	
+}
 
-} Element;
-
-
-
+void elPop()
+{
+	
+}
