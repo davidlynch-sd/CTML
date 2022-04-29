@@ -1,9 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "ctml.h"
-#include "EleStack.h"
+#include "CTML.h"
 
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
 	FILE *input = fopen(argv[2],"r");
 	FILE *output = fopen(argv[1],"w+");
@@ -17,4 +16,3 @@ int main(int argc, char *argv[])
 
 	return 0;
 }
-
