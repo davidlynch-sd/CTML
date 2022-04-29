@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "ctml.c"
+#include "ctml.h"
+#include "EleStack.h"
 
 int main(int argc, char *argv[])
 {
