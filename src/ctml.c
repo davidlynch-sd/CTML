@@ -1,7 +1,5 @@
 
-
-void genHtml(char *input)
+void ctmlCompile(FILE *input, FILE *output)
 {
-	printf("<%s></%s>",input,input);
+	printf("Successful call");
 }
-
