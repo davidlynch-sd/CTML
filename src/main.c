@@ -2,8 +2,15 @@
 #include <stdlib.h>
 #include "ctml.c"
 
-int main()
+int main(int argc, char *argv[])
 {
-	printf("Hello world\n");
+
+	for(int i = 1; i < argc; i++)
+	{
+		printf("[%d], %s\n",i,argv[i]);
+	}
+
+
 	return 0;
 }
+
