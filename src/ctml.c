@@ -1,6 +1,9 @@
 
 void ctmlCompile(FILE *input, FILE *output)
 {
-	while(fgetc(input) != EOF)
-		printf("%c",fgetc(input));
+	while(!feof(input))
+	{
+		char c = fgetc(input);
+		printf("%c",c);
+	}
 }

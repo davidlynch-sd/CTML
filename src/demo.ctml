@@ -2,14 +2,12 @@ html()
 {
 	header()
 	{
-
-	}
-
-	body()
-	{
-		div()
-		{
-
 		}
-	}
+		body()
+		{
+			div()
+			{
+			}
+		}
 }
+
