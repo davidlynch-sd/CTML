@@ -4,6 +4,5 @@
 
 int main()
 {
-	genHtml("div");
 	return 0;
 }
