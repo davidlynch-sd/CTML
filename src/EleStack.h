@@ -1,11 +1,10 @@
-/*		CTML 
+/*		CTML
  *
  *		DAVID LYNCH
  *
  *		29/4/22
- *
+ *		https://github.com/davidlynch-sd/CTML
  */
-
 
 
 //Stack will be char *[length] 

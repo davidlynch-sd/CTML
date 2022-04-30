@@ -1,0 +1,33 @@
+//the compiler isn't reliant on white space like python, so because of that the bracket syntax allows the compiler to discern between reserved elements and plain text to be spat out to the screen
+
+(html)
+{
+	(head)
+	{
+
+	}
+	(body)
+	{
+		(header)
+		{
+
+		}
+		(div)
+		{
+			(quickTable)
+		}
+	}
+}
+
+//this way of defining functions is a means of bridging the gap between code and data.
+!define (quickTable)
+{
+	(table)
+	{
+		!repeat(5,
+			(tr)
+			{
+				(td){}
+			})
+	}
+}

@@ -1,3 +1,11 @@
+/*		CTML
+ *
+ *		DAVID LYNCH
+ *
+ *		29/4/22
+ *		https://github.com/davidlynch-sd/CTML
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "CTML.h"

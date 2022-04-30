@@ -18,15 +18,10 @@ char *noSpace(FILE *input)
 
 			
 	char *buffer = malloc(len);	
-	int index = 0;
-	char c;
+	
 	while(!feof(input))
-	{
-		c = fgetc(input);
-		if(c == ' ' || c == '\t' || c == '\n')
-			puts("IS SPACE\n");
-	}
-
+		*(buffer + ftell(input)) = fgetc(input); 
+	
 	puts(buffer);
 
 	return "CTML";

@@ -1,12 +1,12 @@
-html()
+(html)
 {
-	header()
+	(header)
 	{
 	}
-		body()
+	(body)
+	{
+		(div)
 		{
-			div()
-			{
-			}
 		}
+	}
 }
