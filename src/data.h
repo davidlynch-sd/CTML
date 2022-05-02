@@ -61,7 +61,7 @@ char *Tags[] =
 	"h5",
 	"h6", 
 	"hr",
-	"html",
+	"ctml",
 	"i",
 	"iframe",
 	"img",
