@@ -6,8 +6,6 @@
  *		https://github.com/davidlynch-sd/CTML
  */
 
-
-
 //Function to eliminate whitespace from the source file, essentially making the entire program one line
 char *noSpace(FILE *input)
 {
@@ -16,18 +14,20 @@ char *noSpace(FILE *input)
 	int len = ftell(input);
 	fseek(input,0,0);
 
-			
-	char *buffer = malloc(len);	
+
+	char *buffer = malloc(len);
+
 	int index = 0;
-	char c;
-	while(!feof(input))
-	{
-		c = fgetc(input);
-		if(c == ' ' || c == '\t' || c == '\n')
-			puts("IS SPACE\n");
+	int nulls = 0; 
+
+	for(char c; !feof(input); c = fgetc(input))
+	{	
+		*(buffer + index) = c;
+		index++;
+		if(c == '\t' || c == '\n' || c == ' '){ index--; nulls++;}
 	}
+	
+	buffer = realloc(buffer, len - nulls);
 
-	puts(buffer);
-
-	return "CTML";
+	return buffer;
 }

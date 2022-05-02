@@ -8,7 +8,7 @@
 
 #include "EleStack.h"
 #include "PreProcessor.h"
-
+#include "data.h"
 void ctmlCompile(FILE *input, FILE *output)
 {
 	int opcount = 0;
@@ -20,11 +20,8 @@ void ctmlCompile(FILE *input, FILE *output)
 		if(c == '{')
 			opcount++;
 		if(c == '}')
-			clcount++;
-	
+			clcount++;	
 	}
-	
-	
 	//syntax checking
 	if(opcount == clcount)
 	{
@@ -33,5 +30,13 @@ void ctmlCompile(FILE *input, FILE *output)
 
 		Stack.len = opcount;
 		Stack.names = malloc(sizeof(char*) * Stack.len);
+
+		for(int i = 0 ; i < 105; i++)
+			printf("%s\t%d\n", Tags[i],i);
+
+
+		
+
+		free(srcText);
 	}
 }
