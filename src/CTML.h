@@ -31,11 +31,8 @@ void ctmlCompile(FILE *input, FILE *output)
 		Stack.len = opcount;
 		Stack.names = malloc(sizeof(char*) * Stack.len);
 
-		for(int i = 0 ; i < 105; i++)
-			printf("%s\t%d\n", Tags[i],i);
-
-
-		
+		for(int i = 0; i < tagLen; i++)
+			printf("%s\n",Tags[i]);		
 
 		free(srcText);
 	}

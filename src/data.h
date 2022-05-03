@@ -6,8 +6,6 @@
  *		https://github.com/davidlynch-sd/CTML
  */
 
-
-
 char *Tags[] =
 {
 	"DOCTYPE",
@@ -116,3 +114,4 @@ char *Tags[] =
 	"video",
 	"wbr"
 };
+int tagLen = 105;
