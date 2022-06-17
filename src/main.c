@@ -15,9 +15,18 @@ int main(int argc, char **argv)
 	FILE *input = fopen(argv[2],"r");
 	FILE *output = fopen(argv[1],"w+");
 	
-	if(!input || !output) return 1;
+	if(!input) 
+	{	
+		fprintf(stderr, "No input file provided");
+		exit(1);
+	}
+	if(!output)
+	{
+		fprintf(stderr, "ERROR: Output file couldn't be created");
+		exit(1);
+	}
 	
-	ctmlCompile(input,output);
+	CTML(input,output);
 	
 	fclose(input);
 	fclose(output);
