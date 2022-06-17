@@ -1,1 +1,1 @@
-void ctmlCompile(FILE *,FILE *);
+void CTML(FILE *,FILE *);

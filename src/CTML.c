@@ -10,7 +10,7 @@
 #include "PreProcessor.c"
 #include "data.h"
 
-void ctmlCompile(FILE *input, FILE *output)
+void CTML(FILE *input, FILE *output)
 {
 	int opcount = 0;
 	int clcount = 0;
